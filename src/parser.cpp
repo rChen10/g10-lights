@@ -121,7 +121,7 @@ void parse_circle(char *str, std::vector< matrix<double> >& world, screen& s){
 	circle.draw(s);
 }
 void parse_sphere(char *str, std::vector< matrix<double> >& world, screen& s,light l, light ambient, double areflect[], double dreflect[], double sreflect[], my::vector view){
-	double r; std::vector<double> pc = std::vector<double>(4, 0); int step = 50;
+	double r; std::vector<double> pc = std::vector<double>(4, 0); int step = 30;
 	char **args = parse_args(str);
 	for(int i = 0; i < 3; i++){
 		pc[i] = atof(args[i]);
